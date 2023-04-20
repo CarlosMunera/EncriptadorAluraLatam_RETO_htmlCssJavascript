@@ -1,0 +1,93 @@
+:root {
+    /* COLORES */
+    /* Gray */
+    --Gray-100: #CED4DA;
+    --Gray-200: #ADB5BD;
+    --Gray-500: #868E96;
+    --Gray-400: #495057;
+    --Gray-500b: #343A40;
+    --Gray-Background: #E5E5E5;
+    /* Dark Blue */
+    --Dark-blue-100: #609ed4;
+    --Dark-blue-200: #356ea9;
+    --Dark-blue-300: #0a3871;
+    --Dark-blue-400: #072B61;
+    --Dark-blue-400b: #052051;
+    /* Light Blue */
+    --Light-blue-100: #F3F5FC;
+    --Light-blue-200: #EFF1FA;
+    --Light-blue-300: #E9ECF8;
+    --Light-blue-400: #AAB2D5;
+    --Light-blue-500: #757FB2;
+    /* Blanco */
+    --Blanco: #FFFFFF;
+    /* FONTS */
+    --inter: 'Inter', sans-serif;
+}
+
+
+/* Herramientas */
+
+.texto-centrado {
+    text-align: center;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* Generales */
+
+html {
+    box-sizing: border-box;
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+header {
+    padding: 3rem;
+}
+
+body {
+    font-family: var(--inter);
+}
+
+
+/* MAIN */
+
+.encriptador {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    /* css temporal */
+    background-color: #757FB2;
+}
+
+.encriptador_derecha {
+    width: 60%;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.encriptador_derecha_text {
+    width: 100%
+}
+
+.encriptador_izquierda {
+    width: 30%;
+    background-color: lightgreen;
+}
+
+
+/* FOOTER */
