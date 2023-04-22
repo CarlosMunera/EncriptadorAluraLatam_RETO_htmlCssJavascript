@@ -32,8 +32,13 @@
     text-align: center;
 }
 
+.texto-negrita {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
 .contenedor {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -46,6 +51,11 @@ html {
     font-size: 62.5%;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 *,
 *:after,
 *:before {
@@ -54,7 +64,7 @@ html {
 }
 
 header {
-    padding: 3rem;
+    padding: 1.5rem 3rem;
 }
 
 body {
@@ -64,30 +74,216 @@ body {
 
 /* MAIN */
 
+
+/* ENCRIPTADOR */
+
 .encriptador {
-    padding: 5rem;
+    padding: 3rem;
     display: flex;
-    justify-content: space-between;
-    /* css temporal */
-    background-color: #757FB2;
+    justify-content: space-around;
+    min-height: 45rem;
+    /* css temporal 
+    background-color: #757FB2;*/
 }
 
-.encriptador_derecha {
+
+/* ENCRIPTADOR SECCION IZQUIERDA */
+
+.encriptador_izquierda {
     width: 60%;
-    background-color: burlywood;
+    /* background-color: burlywood */
+    ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.encriptador_derecha_text {
-    width: 100%
+.encriptador_izquierda_textarea {
+    width: 100%;
+    color: var(--Dark-blue-300);
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 150%;
+    border: none;
 }
 
-.encriptador_izquierda {
-    width: 30%;
-    background-color: lightgreen;
+.encriptador_derecha_izquierda::selection {
+    border: none;
+}
+
+.encriptador_izquierda p {
+    color: var(--Gray-400);
+    font-size: 1.2rem;
+    opacity: 0.8;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.encriptador_izquierda_botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.encriptador_izquierda_boton {
+    border: none;
+    border-radius: 2.4rem;
+    padding: 2rem 0;
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.encriptador_izquierda_boton-encriptar {
+    background-color: var(--Dark-blue-300);
+    color: var(--Blanco);
+}
+
+.encriptador_izquierda_boton-encriptar:hover {
+    background-color: var(--Dark-blue-400);
+    color: var(--Blanco);
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.encriptador_izquierda_boton-desencriptar {
+    background-color: var(--Blanco);
+    border: 1px solid var(--Dark-blue-300);
+    color: var(--Dark-blue-300);
+    cursor: pointer;
+}
+
+.encriptador_izquierda_boton-desencriptar:hover {
+    background-color: var(--Light-blue-200);
+}
+
+
+/* ENCRIPTADOR SECCION DERECHA */
+
+.encriptador_derecha {
+    width: 25%;
+    background-color: var(--Blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: -30px 0;
+    border: 30px;
+    border-top: var(--Blanco);
+    border-radius: 2.4rem;
+    padding: 1rem 0 0 0;
+    border-bottom: 30px solid var(--Blanco);
+    box-shadow: 0px 24px 32px 5px rgba(0, 0, 0, 0.08);
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.encriptador_derecha_textarea {
+    color: var(--Gray-400);
+    width: 95%;
+    height: calc(85% - 0.5rem);
+    font-weight: 40rem;
+    font-size: 2.4rem;
+    resize: none;
+    border: none;
+    resize: none;
+}
+
+.encriptador_derecha img {
+    width: 98%;
+    height: 30rem;
+}
+
+.encriptador_derecha p {
+    margin: 0.5rem 0;
+}
+
+.encriptador_derecha_boton {
+    color: var(--Dark-blue-300);
+    background-color: var(--Blanco);
+    width: 90%;
+    border: 1px solid var(--Dark-blue-300);
+    border-radius: 2.4rem;
+    padding: 2rem 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.encriptador_derecha_boton:hover {
+    cursor: pointer;
 }
 
 
 /* FOOTER */
+
+footer {
+    padding-top: 1rem;
+    color: var(--Dark-blue-400b);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+/* Estilos para eventos*/
+
+.justificar {
+    justify-content: center;
+}
+
+.ocultar {
+    display: none;
+}
+
+
+/*  */
+
+@media screen and (max-width: 1000px) {
+    .encriptador_derecha {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: var(--Light-blue-100);
+    }
+    .encriptador {
+        display: unset;
+    }
+    .encriptador_izquierda {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .encriptador_izquierda_textarea {
+        background-color: var(--Light-blue-100);
+    }
+    .encriptador_derecha {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    }
+    #muneco {
+        display: none;
+    }
+    .mensaje {
+        font-size: 1.8rem;
+    }
+    footer {
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .encriptador_izquierda_botones {
+        width: 100%;
+    }
+    .encriptador_izquierda_botones {
+        display: block;
+    }
+    .encriptador_izquierda_boton {
+        width: 100%;
+        margin-bottom: 1.6rem;
+    }
+}
