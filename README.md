@@ -5,8 +5,10 @@ Desarrollo realizado para el reto "Challenge ONE Sprint 01", del programa ALURA 
 
 ![Imagem diseño web](/img/Encriptador.JPG)
 
+![Imagem diseño web](/img/MensjeSecreto.JPG)
+
 ## Requerimientos:
-* El diseño web esta basado en el proporcionado por los mentores por figma.
+* El diseño web esta basado en el proporcionado por los mentores en figma.
 * Campos de texto para el texto a encriptar y desencriptar.
 * Botones para escoger entre las dos opciones. 
 * El texto a encriptar debe estar en minúscula.
@@ -24,9 +26,6 @@ Desarrollo realizado para el reto "Challenge ONE Sprint 01", del programa ALURA 
 
 * **Extra**: botón copiar texto al portapapeles.
 * **Extra**: diseño web responsivo, dispositivos desktop, tablet, celular.
-
-
-
 
 ## Tecnologías Utilizadas:
 
