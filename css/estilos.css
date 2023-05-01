@@ -218,10 +218,19 @@ body {
 /* FOOTER */
 
 footer {
-    padding-top: 1rem;
+    padding: 2rem 0;
     color: var(--Dark-blue-400b);
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--Dark-blue-400b);
+}
+
+footer a:hover {
+    color: goldenrod;
 }
 
 
@@ -236,7 +245,7 @@ footer {
 }
 
 
-/*  */
+/* Diseño responsivo */
 
 @media screen and (max-width: 1000px) {
     .encriptador_derecha {

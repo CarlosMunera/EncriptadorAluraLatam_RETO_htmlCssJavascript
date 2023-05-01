@@ -27,6 +27,8 @@ Desarrollo realizado para el reto "Challenge ONE Sprint 01", del programa ALURA 
 * **Extra**: botón copiar texto al portapapeles.
 * **Extra**: diseño web responsivo, dispositivos desktop, tablet, celular.
 
+
+
 ## Tecnologías Utilizadas:
 
 * HTML5
